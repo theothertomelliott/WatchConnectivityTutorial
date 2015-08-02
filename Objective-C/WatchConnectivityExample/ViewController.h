@@ -10,6 +10,9 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *messageField;
+
+- (IBAction)messageChanged:(id)sender;
 
 @end
 
