@@ -17,6 +17,15 @@ class ViewController: UIViewController, WCSessionDelegate {
     @IBOutlet weak var messageField: UITextField!
     
     @IBAction func messageChanged(sender: AnyObject) {
+        if let message : String = messageField.text {
+            do {
+                try watchSession?.updateApplicationContext(
+                    ["message" : message]
+                )
+            } catch let error as NSError {
+                NSLog("Updating the context failed: " + error.localizedDescription)
+            }
+        }
     }
     
     override func viewDidLoad() {

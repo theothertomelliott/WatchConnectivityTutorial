@@ -17,6 +17,12 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     
     @IBOutlet var messageLabel: WKInterfaceLabel!
     
+    /** Called on the delegate of the receiver. Will be called on startup if an applicationContext is available. */
+    func session(session: WCSession, didReceiveApplicationContext applicationContext: [String : AnyObject]){
+        let message : String = applicationContext["message"] as! String
+        messageLabel.setText(message)
+    }
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
