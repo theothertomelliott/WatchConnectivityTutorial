@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2140FC31B6DE04A00CA2EFE /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2140FC21B6DE04A00CA2EFE /* WatchConnectivity.framework */; };
 		E2C3CEFF1B6DDF9D00A07B3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3CEFE1B6DDF9D00A07B3F /* AppDelegate.swift */; };
 		E2C3CF011B6DDF9D00A07B3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3CF001B6DDF9D00A07B3F /* ViewController.swift */; };
 		E2C3CF041B6DDF9D00A07B3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2C3CF021B6DDF9D00A07B3F /* Main.storyboard */; };
@@ -80,6 +81,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E2140FC21B6DE04A00CA2EFE /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
 		E2C3CEFB1B6DDF9D00A07B3F /* WatchConnectivityExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchConnectivityExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C3CEFE1B6DDF9D00A07B3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2C3CF001B6DDF9D00A07B3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2140FC31B6DE04A00CA2EFE /* WatchConnectivity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +142,7 @@
 		E2C3CEF21B6DDF9D00A07B3F = {
 			isa = PBXGroup;
 			children = (
+				E2140FC21B6DE04A00CA2EFE /* WatchConnectivity.framework */,
 				E2C3CEFD1B6DDF9D00A07B3F /* WatchConnectivityExample */,
 				E2C3CF121B6DDF9D00A07B3F /* WatchConnectivityExampleTests */,
 				E2C3CF1D1B6DDF9E00A07B3F /* WatchConnectivityExampleUITests */,
@@ -722,6 +726,7 @@
 				E2C3CF421B6DDF9E00A07B3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2C3CF441B6DDF9E00A07B3F /* Build configuration list for PBXNativeTarget "WatchConnectivityExample WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -730,6 +735,7 @@
 				E2C3CF461B6DDF9E00A07B3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2C3CF481B6DDF9E00A07B3F /* Build configuration list for PBXNativeTarget "WatchConnectivityExample" */ = {
 			isa = XCConfigurationList;
@@ -738,6 +744,7 @@
 				E2C3CF4A1B6DDF9E00A07B3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2C3CF4B1B6DDF9E00A07B3F /* Build configuration list for PBXNativeTarget "WatchConnectivityExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -746,6 +753,7 @@
 				E2C3CF4D1B6DDF9E00A07B3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2C3CF4E1B6DDF9E00A07B3F /* Build configuration list for PBXNativeTarget "WatchConnectivityExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -754,6 +762,7 @@
 				E2C3CF501B6DDF9E00A07B3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
