@@ -11,4 +11,6 @@
 
 @interface InterfaceController : WKInterfaceController
 
+@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceLabel *messageLabel;
+
 @end
