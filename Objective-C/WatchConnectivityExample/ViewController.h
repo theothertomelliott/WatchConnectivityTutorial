@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+@import WatchConnectivity;
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <WCSessionDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *messageField;
+
+// Our WatchConnectivity Session for communicating with the watchOS app
+@property (nonatomic) WCSession* watchSession;
 
 - (IBAction)messageChanged:(id)sender;
 

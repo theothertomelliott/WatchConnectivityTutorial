@@ -17,6 +17,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    /*
+     * If this device can support a WatchConnectivity session,
+     * obtain a session and activate.
+     *
+     * It isn't usually recommended to put this in viewDidLoad, as the session
+     * may not start in the case of starting in the background. We're doing it
+     * here to keep this example simple.
+     *
+     * Note that even though we won't be receiving messages in the View Controller,
+     * we still need to supply a delegate to activate the session
+     */
+    if([WCSession isSupported]){
+        self.watchSession = [WCSession defaultSession];
+        self.watchSession.delegate = self;
+        [self.watchSession activateSession];
+    }
+
 }
 
 - (void)didReceiveMemoryWarning {
