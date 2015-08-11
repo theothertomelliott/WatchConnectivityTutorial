@@ -43,6 +43,16 @@
 }
 
 - (IBAction)messageChanged:(id)sender {
+    if(self.watchSession){
+        NSError *error = nil;
+        if(![self.watchSession
+         updateApplicationContext:
+            @{@"message" : self.messageField.text }
+             error:&error]){
+            NSLog(@"Updating the context failed: %@", error.localizedDescription);
+        }
+        
+    }
 }
 
 @end

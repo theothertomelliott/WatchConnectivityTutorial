@@ -30,6 +30,12 @@
     }
 }
 
+/** Called on the delegate of the receiver. Will be called on startup if an applicationContext is available. */
+- (void) session:(WCSession *)session didReceiveApplicationContext:(NSDictionary<NSString *,id> *)applicationContext {
+    NSString* message = [applicationContext objectForKey:@"message"];
+    [self.messageLabel setText:message];
+}
+
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user
     [super willActivate];
