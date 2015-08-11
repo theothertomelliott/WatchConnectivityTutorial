@@ -19,7 +19,15 @@
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
 
-    // Configure interface objects here.
+    /*
+     * If this device can support a WatchConnectivity session,
+     * obtain a session and activate.
+     */
+    if([WCSession isSupported]){
+        self.watchSession = [WCSession defaultSession];
+        self.watchSession.delegate = self;
+        [self.watchSession activateSession];
+    }
 }
 
 - (void)willActivate {

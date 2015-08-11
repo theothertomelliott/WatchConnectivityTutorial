@@ -8,9 +8,13 @@
 
 #import <WatchKit/WatchKit.h>
 #import <Foundation/Foundation.h>
+@import WatchConnectivity;
 
-@interface InterfaceController : WKInterfaceController
+@interface InterfaceController : WKInterfaceController <WCSessionDelegate>
 
 @property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceLabel *messageLabel;
+
+// Our WatchConnectivity Session for communicating with the iOS app
+@property (nonatomic) WCSession* watchSession;
 
 @end
